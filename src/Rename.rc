@@ -1,0 +1,258 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Rename.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Rename.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ReRe Version",IDC_STATIC,46,12,44,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "",IDC_STC_VERSION,89,12,57,8
+END
+
+IDD_RENAME_DIALOG DIALOGEX 0, 0, 418, 350
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ReRe (Unicode version)"
+FONT 9, "ＭＳ ゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ﾘﾈｰﾑ設定",IDC_STATIC,7,7,405,157
+    LISTBOX         IDC_LST_RENLIST,13,19,200,74,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "置換書式",IDC_STATIC,14,99,33,8
+    EDITTEXT        IDC_EDT_RENSTR,13,108,200,14,ES_AUTOHSCROLL
+    LTEXT           "%f : ﾌｧｲﾙ名\n%t : ﾀｲﾄﾙ(ﾌｧｲﾙ名の拡張子以外)\n%e : 拡張子\n%n : 連番",IDC_STATIC,20,125,128,32
+    GROUPBOX        "ﾌｧｲﾙ名変更ﾌｨﾙﾀ",IDC_STATIC,236,17,170,139
+    GROUPBOX        "ﾄﾘﾑ",IDC_STATIC,242,27,159,28
+    LTEXT           "開始",IDC_STATIC,250,40,17,8
+    EDITTEXT        IDC_EDT_CNVTRIMPOS,268,38,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPN_CNVTRIMPOS,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,288,37,9,13
+    LTEXT           "長さ",IDC_STATIC,311,40,17,8
+    EDITTEXT        IDC_EDT_CNVTRIMLEN,329,38,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPN_CNVTRIMLEN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,349,37,9,13
+    GROUPBOX        "ｶｯﾄ",IDC_STATIC,241,58,159,28
+    LTEXT           "開始",IDC_STATIC,249,70,17,8
+    EDITTEXT        IDC_EDT_CNVCUTPOS,267,68,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPN_CNVCUTPOS,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,288,67,9,13
+    LTEXT           "長さ",IDC_STATIC,311,70,17,8
+    EDITTEXT        IDC_EDT_CNVCUTLEN,329,68,21,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPN_CNVCUTLEN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,349,67,9,13
+    GROUPBOX        "置換",IDC_STATIC,241,89,160,28
+    LTEXT           "変換前",IDC_STATIC,250,101,25,8
+    EDITTEXT        IDC_EDT_CNVREPBFR,275,99,40,12,ES_AUTOHSCROLL
+    LTEXT           "変換後",IDC_STATIC,323,101,25,8
+    EDITTEXT        IDC_EDT_CNVREPAFT,349,99,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "文字変換",IDC_STATIC,241,121,160,28
+    CONTROL         "なし",IDC_RDO_CNVCASENONE,"Button",BS_AUTORADIOBUTTON,253,134,32,10
+    CONTROL         "小文字化",IDC_RDO_CNVCASELOW,"Button",BS_AUTORADIOBUTTON,288,134,48,10
+    CONTROL         "大文字化",IDC_RDO_CNVCASEUP,"Button",BS_AUTORADIOBUTTON,341,134,48,10
+    GROUPBOX        "ﾘｽﾄ操作",IDC_STATIC,7,169,273,50
+    PUSHBUTTON      "ﾃﾞｨﾚｸﾄﾘ内のﾌｧｲﾙを追加...",IDC_BTN_ADDDIR,12,182,129,15,BS_MULTILINE
+    PUSHBUTTON      "選択項目削除",IDC_BTN_DELSEL,146,182,63,15,BS_MULTILINE
+    PUSHBUTTON      "全項目削除",IDC_BTN_DELALL,211,182,63,15,BS_MULTILINE
+    CONTROL         "ｻﾌﾞﾃﾞｨﾚｸﾄﾘ含む",IDC_CHK_ADDSUBDIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,203,72,10
+    EDITTEXT        IDC_EDT_ADDEXT,147,202,26,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "リネーム開始",IDC_BTN_START,357,177,55,28
+    PUSHBUTTON      "元に戻す",IDC_BTN_UNDO,357,207,55,12
+    CONTROL         "List1",IDC_LSC_FILE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,224,418,105
+    LTEXT           "追加する拡張子",IDC_STATIC,88,204,57,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "FileDescription", "ReRe"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "ReRe"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "ReRe.exe"
+            VALUE "ProductName", "ReRe"
+            VALUE "ProductVersion", "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RENAME_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_RENAME_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "ﾊﾞｰｼﾞｮﾝ情報(&A)..."
+    IDS_FILENOTFOUND        "「%s」は存在しません"
+    IDS_FILEEXIST           "「%s」は既に同名ファイルが存在している為リネーム出来ません"
+    IDS_FILEDUPLICATE       "新ファイル名「%s」が重複する為リネーム出来ません"
+    IDS_RENAMECOMPLETE      "完了"
+    IDS_STATUSMESSAGE       "%d ファイル  %d 件選択"
+    IDS_FILELISTCOL_NAME    "ファイル名"
+    IDS_FILELISTCOL_NEWNAME "新ファイル名"
+    IDS_FILELISTCOL_DATE    "日時"
+    IDS_FILELISTCOL_SIZE    "サイズ"
+    IDS_FILELISTCOL_TYPE    "種類"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILELISTSORT_ASC    "△"
+    IDS_FILELISTSORT_DESC   "▽"
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Rename.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
